@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sub-title {
+    @apply text-white bg-sky-600 text-center p-1 lg:p-3 font-semibold uppercase text-base lg:text-xl;
+}
+
+@layer components {
+    .link {
+        @apply text-sky-600 underline underline-offset-2 decoration-1 hover:no-underline transition duration-700 hover:text-sky-800
+    }
+}
+
+@layer components {
+    .mark {
+        @apply w-[20px] h-[20px] bg-sky-600
+    }
+}
