@@ -8,6 +8,17 @@
     <title>CV Maryna Kuvshynova</title>
 </head>
 <body class="font-main">
+    <header class="sticky top-0 py-4 bg-white z-10">
+        <div class="max-w-screen-xl mx-auto">
+            <ul class="flex flex-wrap justify-center gap-4 nav">
+                <li><button class="transition-colors" data-nav="experience">EXPERIENCE</button></li>
+                <li><button class="transition-colors" data-nav="education">EDUCATION</button></li>
+                <li><button class="transition-colors" data-nav="projects">PROJECTS</button></li>
+                <li><button class="transition-colors" data-nav="about">ABOUT ME</button></li>
+                <li><button class="transition-colors" data-nav="skills">SKILLS</button></li>
+            </ul>
+        </div>
+    </header>
     <main class="max-w-screen-xl mx-auto grid md:grid-cols-[minmax(270px,30%)_1fr] gap-8 md:grid-rows-[auto_1fr] p-5">
         <div class="uppercase md:row-span-1 md:col-start-2 md:col-end-3 text-center">
             <h1 class="text-4xl lg:text-6xl text-sky-600 font-extrabold">MARYNA <br>KUVSHYNOVA</h1>
@@ -29,13 +40,15 @@
                 </div>
             </div>
             <div class="space-y-4">
-                <div>
-                    <h3 class="sub-title">ABOUT ME</h3>
-                    <p class="py-4">Innovative and results driven developer with over 10 years of web development experience in remote settings. Conscientious and disciplined, constantly striving to improve professional qualifications. Dedicated to maintaining a reputation built on quality, service and uncompromising ethics. Versatile problem solver and team builder who is always customer focused. Committed to excellence, mastering of new skills and adapting to changing requirements</p>
+                <div class="open-close" data-section="about">
+                    <h3 class="sub-title open-close-btn">ABOUT ME</h3>
+                    <div class="open-close-hidden">
+                        <p class="py-4">Innovative and results driven developer with over 10 years of web development experience in remote settings. Conscientious and disciplined, constantly striving to improve professional qualifications. Dedicated to maintaining a reputation built on quality, service and uncompromising ethics. Versatile problem solver and team builder who is always customer focused. Committed to excellence, mastering of new skills and adapting to changing requirements</p>
+                    </div>
                 </div>
-                <div class="space-y-7 text-xs">
-                    <h3 class="sub-title">SKILLS</h3>
-                    <div class="space-y-5">
+                <div class="space-y-7 text-xs open-close" data-section="skills">
+                    <h3 class="sub-title open-close-btn">SKILLS</h3>
+                    <div class="space-y-5 open-close-hidden">
                         <div class="space-y-2">
                             <h4 class="font-bold text-sm">PERSONAL</h4>
                             <div class="space-y-1">
@@ -263,84 +276,86 @@
                 </div>
             </div>
         </aside>
-        <div class="md:row-span-2 md:col-start-2 md:col-end-3 space-y-10">
-            <div class="space-y-7">
-                <h3 class="sub-title">EXPERIENCE</h3>
-                <div class="px-5 space-y-1">
-                    <h3 class="uppercase font-bold text-2xl">FRONTEND WEB DEVELOPER</h3>
-                    <div>
-                        <span class="block text-right">( 01.2021 – present)</span>
+        <div class="md:row-span-2 md:col-start-2 md:col-end-3">
+            <div class="open-close" data-section="experience">
+                <h3 class="sub-title open-close-btn mb-10">EXPERIENCE</h3>
+                <div class="open-close-hidden space-y-7">
+                    <div class="px-5 space-y-1">
+                        <h3 class="uppercase font-bold text-2xl">FRONTEND WEB DEVELOPER</h3>
                         <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Big Drop, Kharkiv, Ukraine</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Reviewed and completed 5+ urgent projects inherited from other developers</li>
-                                <li>Supervised and refactored the work of new employees, leading to increased product quality</li>
-                                <li>Followed company specific standards when developing elements for integration into Drupal and WordPress</li>
-                                <li>Created components, and corrected the structure of components created by others, as part of the Vue developer team for a critical 9 month project</li>
-                            </ul>
+                            <span class="block text-right">( 01.2021 – present)</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Big Drop, Kharkiv, Ukraine</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Reviewed and completed 5+ urgent projects inherited from other developers</li>
+                                    <li>Supervised and refactored the work of new employees, leading to increased product quality</li>
+                                    <li>Followed company specific standards when developing elements for integration into Drupal and WordPress</li>
+                                    <li>Created components, and corrected the structure of components created by others, as part of the Vue developer team for a critical 9 month project</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-right">( 06.2018 – 01.2021 )</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Velvet Digital, Budapest, Hungary</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Participated and supported the development of 120+ projects</li>
+                                    <li>Introduced basic standards for markup developers to create web page layouts, which led to more consistent project structuring</li>
+                                    <li>Restyled elements as part of the React development team, which contributed to the timely completion of a high priority project</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-right">( 05.2017 – 05.2018 )</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Pixite, Chelyabinsk, Russia</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Worked effectively as part of a group, contributing to improved working relations, increased performance and accelerated project schedules</li>
+                                    <li>Recognised for high-quality and effective execution of tasks while participating in the development of 50+ websites</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-right">( 01.2017 – 05.2017 )</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Web for business, Plzen, Czechia</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Researched and analyzed the websites of potential clients,resulting in the acquisition of 4 new customers</li>
+                                    <li>Optimized interactions between designers, front-end and back-end teams, resulting in increased productivity and capacity to serve new customers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="block text-right">( 03.2013 - 01.2017 )</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Web-planet, Plzen, Czechia</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Developed 400+ projects, including implementing new technologies, primarily as the sole front-end developer</li>
+                                    <li>Collaborated with back-end developer and web designer to improve project workflow resulting in faster product development</li>
+                                    <li>Trained and mentored 3 junior team members during company expansion</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <span class="block text-right">( 06.2018 – 01.2021 )</span>
+                    <div class="px-5 space-y-1 pb-7">
+                        <h3 class="uppercase font-bold text-2xl">HTML-CODER</h3>
                         <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Velvet Digital, Budapest, Hungary</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Participated and supported the development of 120+ projects</li>
-                                <li>Introduced basic standards for markup developers to create web page layouts, which led to more consistent project structuring</li>
-                                <li>Restyled elements as part of the React development team, which contributed to the timely completion of a high priority project</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="block text-right">( 05.2017 – 05.2018 )</span>
-                        <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Pixite, Chelyabinsk, Russia</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Worked effectively as part of a group, contributing to improved working relations, increased performance and accelerated project schedules</li>
-                                <li>Recognised for high-quality and effective execution of tasks while participating in the development of 50+ websites</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="block text-right">( 01.2017 – 05.2017 )</span>
-                        <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Web for business, Plzen, Czechia</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Researched and analyzed the websites of potential clients,resulting in the acquisition of 4 new customers</li>
-                                <li>Optimized interactions between designers, front-end and back-end teams, resulting in increased productivity and capacity to serve new customers</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="block text-right">( 03.2013 - 01.2017 )</span>
-                        <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">Web-planet, Plzen, Czechia</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Developed 400+ projects, including implementing new technologies, primarily as the sole front-end developer</li>
-                                <li>Collaborated with back-end developer and web designer to improve project workflow resulting in faster product development</li>
-                                <li>Trained and mentored 3 junior team members during company expansion</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="px-5 space-y-1">
-                    <h3 class="uppercase font-bold text-2xl">HTML-CODER</h3>
-                    <div>
-                        <span class="block text-right">( 01.2010 - 02.2013 )</span>
-                        <div>
-                            <h4 class="text-sky-600 text-xl lg:text-2xl font-light">W3 Ukraine, Kharkiv</h4>
-                            <ul class="list-disc pl-10">
-                                <li>Created 100+ websites and 10+ mail templates of varying complexity</li>
-                                <li>Followed company syntax standards and used company tools for preliminary product testing</li>
-                            </ul>
+                            <span class="block text-right">( 01.2010 - 02.2013 )</span>
+                            <div>
+                                <h4 class="text-sky-600 text-xl lg:text-2xl font-light">W3 Ukraine, Kharkiv</h4>
+                                <ul class="list-disc pl-10">
+                                    <li>Created 100+ websites and 10+ mail templates of varying complexity</li>
+                                    <li>Followed company syntax standards and used company tools for preliminary product testing</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="space-y-7">
-                <h3 class="sub-title">EDUCATION</h3>
-                <div class="px-5 space-y-1">
+            <div class="open-close mb-10" data-section="education">
+                <h3 class="sub-title open-close-btn">EDUCATION</h3>
+                <div class="open-close-hidden px-5 space-y-1">
                     <div>
                         <span class="block text-right">( 04.2021 - 07.2021 )</span>
                         <h3 class="font-bold text-2xl">Online Сourses "Glo Academy", Russia</h3>
@@ -360,18 +375,21 @@
                 </div>
             </div>
 
-            <div class="space-y-7">
-                <h3 class="sub-title">PROJECTS</h3>
-                <p>Below is a snapshot of websites I created and their notable features:</p>
-                <p><a class="link" href="ossn.ru">ossn.ru</a> - Built a web portal which allows doctors to exchange information and share experiences</p>
-                <p><a class="link" href="flysmartavia.com">flysmartavia.com</a> - Worked as part of a team to redesign an existing website. Modified the site’s structure and style to ensure brand consistency and visual appeal.</p>
-                <p><a class="link" href="compressorgroup.ru">compressorgroup.ru</a> - Redesigned an existing webstore which allowed customers to display the entire catalog of products leading to increased sales potential.</p>
-                <p><a class="link" href="zamokdrakona.com.ua">zamokdrakona.com.ua</a> - Worked directly with the client, delivering on their vision, providing feedback, and adding extra features following implementation as requirements evolved. Implemented booking request push notifications to Telegram app thus allowing for faster response times</p>
-                <p><a class="link" href="localtrans.ru">localtrans.ru</a> - Simplified order processing, which improved efficiency and communication with customers.</p>
-                <p><a class="link" href="sintez59.ru">sintez59.ru</a> - Developed under tight customer-imposed deadlines</p>
-                <p><a class="link" href="ong‑consult.com">ong‑consult.com</a> - Designed striking visual animations.</p>
+            <div class="open-close" data-section="projects">
+                <h3 class="sub-title open-close-btn mb-10">PROJECTS</h3>
+                <div class="open-close-hidden space-y-7">
+                    <p>Below is a snapshot of websites I created and their notable features:</p>
+                    <p><a class="link" href="ossn.ru">ossn.ru</a> - Built a web portal which allows doctors to exchange information and share experiences</p>
+                    <p><a class="link" href="flysmartavia.com">flysmartavia.com</a> - Worked as part of a team to redesign an existing website. Modified the site’s structure and style to ensure brand consistency and visual appeal.</p>
+                    <p><a class="link" href="compressorgroup.ru">compressorgroup.ru</a> - Redesigned an existing webstore which allowed customers to display the entire catalog of products leading to increased sales potential.</p>
+                    <p><a class="link" href="zamokdrakona.com.ua">zamokdrakona.com.ua</a> - Worked directly with the client, delivering on their vision, providing feedback, and adding extra features following implementation as requirements evolved. Implemented booking request push notifications to Telegram app thus allowing for faster response times</p>
+                    <p><a class="link" href="localtrans.ru">localtrans.ru</a> - Simplified order processing, which improved efficiency and communication with customers.</p>
+                    <p><a class="link" href="sintez59.ru">sintez59.ru</a> - Developed under tight customer-imposed deadlines</p>
+                    <p><a class="link" href="ong‑consult.com">ong‑consult.com</a> - Designed striking visual animations.</p>
+                </div>
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

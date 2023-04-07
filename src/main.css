@@ -19,3 +19,24 @@
         @apply w-[20px] h-[20px] bg-sky-600
     }
 }
+
+.open-close-btn {
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+}
+
+.open-close-btn:hover,
+.hide .open-close-btn {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.open-close-hidden {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.hide .open-close-hidden {
+    max-height: 0;
+}
+
